@@ -1,0 +1,11 @@
+nova-agent/
+├── src/
+│   ├── core/
+│   │   ├── chat_worker.py
+│   │   └── tools.py
+│   ├── ui/
+│   │   ├── chat_widget.py
+│   │   └── main_window.py
+│   └── main.py
+├── pyproject.toml
+└── run.py
