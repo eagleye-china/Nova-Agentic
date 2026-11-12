@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nova-chat"
+version = "0.1.1"
+description = "A QML-powered AI Agent framework for PySide, designed to write and execute code autonomously."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "eagleye-china", email = "zdt168@sina.cn" }]
+dependencies = [
+    "PySide6>=6.6",
+    "openai>=1.0",
+    "markdown>=3.5",
+    "ruff>=0.1.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/eagleye-china/Nova-Agent"
+Repository = "https://github.com/eagleye-china/Nova-Agent"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# ✅ 核心修正：将 nova_chat 目录下的 QML 文件全部打包进库中
+[tool.setuptools.package-data]
+nova_agent = [
+    "ui/*.qml",
+    "qml/*.qml",
+    "resources/*"
+]

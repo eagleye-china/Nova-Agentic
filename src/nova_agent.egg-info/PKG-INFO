@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: nova-agent
+Version: 0.1.0
+Summary: A QML-powered AI Agent framework for PySide, designed to write and execute code autonomously.
+Author-email: eagleye-china <zdt168@sina.cn>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/eagleye-china/Nova-Agent
+Project-URL: Repository, https://github.com/eagleye-china/Nova-Agent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: PySide6>=6.6
+Requires-Dist: openai>=1.0
+Requires-Dist: markdown>=3.5
+Requires-Dist: ruff>=0.1.0
+
+my-ai-agent/ (独立新项目)
+├── src/
+│   ├── core/
+│   │   ├── chat_worker.py
+│   │   └── tools.py      # 后续可以在这里扩展更多的工具（如运行测试、查数据库）
+│   ├── ui/
+│   │   ├── chat_widget.py
+│   │   └── main_window.py
+│   └── main.py
+├── pyproject.toml        # 依赖 pyside-quasar (通过 pip install -e 挂载)
+└── run.py
