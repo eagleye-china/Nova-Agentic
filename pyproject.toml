@@ -3,8 +3,8 @@ requires = ["setuptools>=68.2", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "nova-chat"
-version = "0.1.2b"
+name = "nova-agentic"
+version = "0.1.2rc0"
 description = "A QML-powered AI Agent framework for PySide, designed to write and execute code autonomously."
 readme = "README.md"
 requires-python = ">=3.10"
