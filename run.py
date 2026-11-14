@@ -9,8 +9,7 @@ sys.path.insert(0, src_dir)
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-# 注意这里：直接导入 dev_toolbox_pro，去掉了之前的 src. 前缀
-from src.nova_chat.main import main
+from main import main
 
 if __name__ == "__main__":
     main()
